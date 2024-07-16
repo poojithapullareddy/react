@@ -25,6 +25,17 @@ import Hovercount from './components/hovercount';
 import Renderprops from './components/Renderprops';
 import UserProvider from './components/context';
 import UseContext from './components/usecontext';
+import HttpGET from './components/HttpGET';
+import HttpPOST from './components/HttpPOST'; 
+import { HttpDEL } from './components/HttpDel';
+import Hook1 from './components/Hook1';
+import Hook2 from './components/Hook2';
+import Hook3 from './components/Hook3';
+import Hook4 from './components/Hook4';
+import Hook5 from './components/Hook5';
+import Hook6 from './components/Hook6';
+import HookFetch  from './components/HookFetch';
+import HookFetchPar from './components/HookFetchPar';
 function App() {
   const username = 'Pooja';
   return (
@@ -54,11 +65,22 @@ function App() {
       {/* <Hovercount/> */}
       {/* <Renderprops render={(count, incrementedNumber) => (
         <Hovercount handleCount1={incrementedNumber} count1={count} />
-      )} /> */}
+      )} />
 
 <UserProvider value={username}>
       <UseContext />
-    </UserProvider>
+    </UserProvider> */}
+    {/* <HttpGET/> */}
+    {/* <HttpPOST/> */}
+    {/* <HttpDEL/>
+    <Hook1/> */}
+    {/* <Hook2/>
+    <Hook3></Hook3> */}
+    {/* <Hook4/> */}
+    {/* <Hook5/> */}
+    {/* <Hook6/> */}
+    {/* <HookFetch/> */}
+    <HookFetchPar/>
     </div>
   );
 }
